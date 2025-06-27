@@ -71,7 +71,7 @@ public class HeaderMenuTests extends TestBase {
   }
 
   @Test
-  @DisplayName("Переход на страницу 'Вакансии' c главной страницы через меню")
+  @DisplayName("Переход на страницу 'Карьера и вакансии' c главной страницы через меню")
   @Owner("Victalina")
   @Severity(SeverityLevel.NORMAL)
   void openPageVacanciesFromMenuOnMainPageTest() {

@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class VacanciesPage {
 
-  @Step("Проверить заголовок на странице 'Вакансии'")
+  @Step("Проверить заголовок на странице 'Карьера и вакансии'")
   public VacanciesPage checkTitleVacancies(String title) {
     $(".ctr-vacancies-referral-head__title").$("h1").shouldHave(text(title));
 
