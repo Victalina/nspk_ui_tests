@@ -18,6 +18,7 @@ import java.util.stream.Stream;
         @Tag("main_page_tests")
 })
 @DisplayName("Проверка главной страницы сайта nspk.ru")
+@Owner("Victalina")
 @Epic("Сайт nspk.ru")
 @Story("Главная страница сайта nspk.ru")
 @Feature("Главная страница сайта nspk.ru")
@@ -27,7 +28,6 @@ public class MainPageTests extends TestBase {
 
   @Test
   @DisplayName("Проверка открытия главной страницы и заголовка")
-  @Owner("Victalina")
   @Severity(SeverityLevel.BLOCKER)
   void openMainPageAndCheckTitleTest() {
     mainPage.openMainPage()
@@ -49,7 +49,6 @@ public class MainPageTests extends TestBase {
 
   @MethodSource("dataProvider")
   @ParameterizedTest(name = "Проверка блока {1} на главной странице")
-  @Owner("Victalina")
   @Severity(SeverityLevel.NORMAL)
   void checkBlocksOnMainPageTest(String id, String blockTitle, String blockText) {
     mainPage.openMainPage()
@@ -58,7 +57,6 @@ public class MainPageTests extends TestBase {
 
   @CsvFileSource(resources = "/test_data/MainPageBlocks.csv")
   @ParameterizedTest(name = "Проверка блока {1} на главной странице")
-  @Owner("Victalina")
   @Severity(SeverityLevel.NORMAL)
   void checkBlocksWithLinkOnMainPageTest(String id, String blockTitle, String linkUrl, String linkText) {
     mainPage.openMainPage()

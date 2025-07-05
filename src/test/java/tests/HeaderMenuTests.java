@@ -15,6 +15,7 @@ import pages.VacanciesPage;
         @Tag("header_menu_tests")
 })
 @DisplayName("Проверка пунктов меню на главной странице сайта nspk.ru")
+@Owner("Victalina")
 @Epic("Сайт nspk.ru")
 @Story("Меню на главной странице сайта nspk.ru")
 @Feature("Меню на главной странице сайта nspk.ru")
@@ -27,7 +28,6 @@ public class HeaderMenuTests extends TestBase {
 
   @Test
   @DisplayName("Проверка пунктов основного меню на главной странице")
-  @Owner("Victalina")
   @Severity(SeverityLevel.CRITICAL)
   void checkHeaderMenuOnMainPageTest() {
     String[] headerMenuItems = new String[]{"О компании", "Платежная система «Мир»", "Банкам", "Центр знаний",
@@ -38,7 +38,6 @@ public class HeaderMenuTests extends TestBase {
 
   @Test
   @DisplayName("Проверка подпунктов меню пункта 'О компании' на главной странице")
-  @Owner("Victalina")
   @Severity(SeverityLevel.CRITICAL)
   void checkSubmenuItemsOfAboutItemMenuOnMainPageTest() {
     String headerMenuItem = "О компании";
@@ -52,7 +51,6 @@ public class HeaderMenuTests extends TestBase {
 
   @Test
   @DisplayName("Переход на страницу 'О компании АО «НСПК»' c главной страницы через меню")
-  @Owner("Victalina")
   @Severity(SeverityLevel.NORMAL)
   void openPageAboutCompanyFromMenuOnMainPageTest() {
     mainPage.openMainPage()
@@ -62,7 +60,6 @@ public class HeaderMenuTests extends TestBase {
 
   @Test
   @DisplayName("Переход на страницу 'Обработка персональных данных' c главной страницы через меню")
-  @Owner("Victalina")
   @Severity(SeverityLevel.NORMAL)
   void openPageProcessingOfPersonalDataFromMenuOnMainPageTest() {
     mainPage.openMainPage()
@@ -72,7 +69,6 @@ public class HeaderMenuTests extends TestBase {
 
   @Test
   @DisplayName("Переход на страницу 'Карьера и вакансии' c главной страницы через меню")
-  @Owner("Victalina")
   @Severity(SeverityLevel.NORMAL)
   void openPageVacanciesFromMenuOnMainPageTest() {
     mainPage.openMainPage()
